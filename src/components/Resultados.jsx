@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const Resultados = ({ huella }) => {
+  const kg = (huella / 1000).toFixed(3);
   return (
     <motion.div
       className="resultados"
@@ -12,8 +13,7 @@ const Resultados = ({ huella }) => {
     >
       <h2>📊 Tu Huella Digital</h2>
       <p>
-        Has generado aproximadamente{" "}
-        <strong>{huella} kg CO₂</strong> en un día.
+        Has generado aproximadamente <strong>{huella} g CO₂</strong> al día ({kg} kg CO₂).
       </p>
     </motion.div>
   );

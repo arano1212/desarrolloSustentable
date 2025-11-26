@@ -2,26 +2,25 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const Recomendaciones = ({ huella }) => {
-
   let tips = [];
 
   if (huella <= 50) {
     tips = [
       "🌱 Tener una planta en casa ayuda a mejorar la calidad del aire.",
       "💡 Usa focos LED: consumen hasta 80% menos energía.",
-      "🔌 Apaga luces y desconecta cargadores cuando no los uses.",
+      "🔌 Apaga luces y desconecta cargadores cuando no los uses."
     ];
   } else if (huella > 50 && huella <= 150) {
     tips = [
       "🚴 Usa bicicleta o camina en trayectos cortos en lugar del coche.",
       "🥦 Reduce el consumo de carne roja, su producción genera mucho CO₂.",
-      "📱 Baja el brillo de tus dispositivos para ahorrar energía.",
+      "📱 Baja el brillo de tus dispositivos para ahorrar energía."
     ];
   } else {
     tips = [
       "⚡ Considera cambiar a energías renovables si es posible.",
       "🚗 Comparte coche o usa transporte público para reducir emisiones.",
-      "📉 Reduce el uso de tus dispositivos al menos 2h al día.",
+      "📉 Reduce el uso de tus dispositivos al menos 2h al día."
     ];
   }
 
